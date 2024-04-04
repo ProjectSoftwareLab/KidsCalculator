@@ -1,0 +1,74 @@
+/* General styles */
+body {
+    background-color: #FFD700; /* Gold background */
+    font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif; /* Fun, kid-friendly font */
+    color: #000;
+  }
+  
+  /* Header */
+  header {
+    background-color: #FF69B4; /* Hot pink background */
+    padding: 20px;
+    text-align: center;
+    font-size: 30px; /* Larger font size for headings */
+    font-weight: bold; /* Bold font for headings */
+  }
+  
+  /* Main content */
+  main {
+    margin: 20px;
+    padding: 20px;
+    border: 10px solid #FF69B4; /* Hot pink border */
+    border-radius: 15px;
+  }
+  
+  /* Tools section */
+  .tools {
+    background-color: #FFD700; /* Gold background */
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+  }
+  
+  /* Headings */
+  h1, h2 {
+    color: #FF4500; /* Orange red color for headings */
+  }
+  
+  /* Lists */
+  ol {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  li {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #FF69B4; /* Hot pink border for list items */
+    border-radius: 10px;
+  }
+  
+  /* Links */
+  a {
+    color: #000;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: #FF4500; /* Orange red color for hover state */
+    text-decoration: underline;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #FF69B4; /* Hot pink background */
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    font-size: 14px; /* Smaller font size for footer text */
+  }
+  
