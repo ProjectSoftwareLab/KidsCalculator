@@ -1,6 +1,5 @@
-# KidsCalculator
-Main repository for this project
 <h1>Kids Calculator</h1>
+  <p>Main repository for this project<p>
   <p>This project aims to create a simple calculator tailored for kids to learn basic arithmetic operations such as addition, subtraction, multiplication, and division. The calculator will have a landing page and separate pages for each operation to facilitate learning and practice.</p>
 
   <h2>Features</h2>
