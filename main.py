@@ -18,6 +18,11 @@ def substraction():
 @app.route("/multiplication")
 def multiplication():
     return render_template("multiplication.html")
+
+@app.route("/division")
+def division():
+    return render_template("division.html")
+
 if __name__ == '__main__':
     app.run(debug=True)
 
