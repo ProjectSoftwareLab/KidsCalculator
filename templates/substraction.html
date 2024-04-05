@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subtraction for Kids</title>
+    <style>
+        li {
+            display: inline;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #ADD8E6;
+            padding: 10px 20px;
+            z-index: 1;
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #0000CD;
+            padding: 5px 10px;
+            border: 1px solid #0000CD;
+        }
+
+        a:hover {
+            background-color: #FF69B4;
+            color: white;
+        }
+
+        h1 {
+                text-align: center;
+        }
+
+        body {
+            font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif;
+            background-color: #ADD8E6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        #app {
+            text-align: center;
+            border: 5px dashed #FF69B4;
+            padding: 20px;
+            background-color: #FFF8DC;
+        }
+
+        #question {
+            font-size: 2em;
+            color: #0000CD;
+        }
+
+        #result {
+            font-size: 1.5em;
+            margin-top: 1em;
+            color: #008000;
+        }
+
+        input[type="number"] {
+            border: 2px solid #0000CD;
+            font-size: 1em;
+            padding: 5px;
+        }
+
+        button {
+            background-color: #FF69B4;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 1em;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <ul> <!--navigation bar-->
+            <li><a href="index.html">Home</a></li>
+            <li><a href="addition.html">Addition</a></li>
+            <li><a href="substraction.html">Substraction</a></li>
+            <li><a href="multiplication.html">Multiplication</a></li>
+            <li><a href="division.html">Division</a></li>
+        </ul><br> <!-- navigation bar end -->
+        <h1>Substraction for Kids</h1>
+    </header>
+    <main>
+    <div id="app">
+        <div id="question"></div>
+        <input id="answer" type="number" placeholder="Enter your answer here">
+        <button onclick="checkAnswer()">Submit</button>
+        <div id="result"></div>
+    </div>
+    <script>
+        let num1 = Math.floor(Math.random() * 10);
+        let num2 = Math.floor(Math.random() * 10);
+        if (num1 < num2) {
+            [num1, num2] = [num2, num1];
+        }
+        document.getElementById('question').innerText = `What is ${num1} - ${num2} = ?`;
+
+        function checkAnswer() {
+            const userAnswer = document.getElementById('answer').value;
+            const correctAnswer = num1 - num2;
+            if (userAnswer == correctAnswer) {
+                document.getElementById('result').innerText = 'Correct! Great job!';
+            } else {
+                document.getElementById('result').innerText = `Oops! The correct answer is ${correctAnswer}.`;
+            }
+        }
+    </script>
+    </main>
+</body>
+</html>

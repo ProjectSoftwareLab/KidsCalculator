@@ -7,6 +7,14 @@ def hello():
     app.debug = True
     return render_template("index.html")
 
-if __name__== "__main__":
-    app.run(host='0.0.0.0')
+@app.route("/addition")
+def addition():
+    return render_template("addition.html")
+
+@app.route("/substraction")
+def substraction():
+    return render_template("substraction.html")
+
+if __name__ == '__main__':
+    app.run(debug=True)
 
