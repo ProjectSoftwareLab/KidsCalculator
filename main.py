@@ -15,6 +15,9 @@ def addition():
 def substraction():
     return render_template("substraction.html")
 
+@app.route("/multiplication")
+def multiplication():
+    return render_template("multiplication.html")
 if __name__ == '__main__':
     app.run(debug=True)
 

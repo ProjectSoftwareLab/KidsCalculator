@@ -102,11 +102,11 @@
 <body>
     <header>
         <ul> <!--navigation bar-->
-            <li><a href="index.html">Home</a></li>
-            <li><a href="addition.html">Addition</a></li>
-            <li><a href="substraction.html">Substraction</a></li>
-            <li><a href="multiplication.html">Multiplication</a></li>
-            <li><a href="division.html">Division</a></li>
+            <li><a href="/">Home</a></li>
+            <li><a href="/addition">Addition</a></li>
+            <li><a href="/substraction">Substraction</a></li>
+            <li><a href="/multiplication">Multiplication</a></li>
+            <li><a href="/division">Division</a></li>
         </ul><br> <!-- navigation bar end -->
         <h1>Multiplication for Kids</h1>
     </header>
@@ -120,14 +120,14 @@
     <script>
         let num1 = Math.floor(Math.random() * 10) + 1;
         let num2 = Math.floor(Math.random() * 10) + 1;
-        document.getElementById('question').innerText = What is ${num1} * ${num2}?;
+        document.getElementById('question').innerText = `What is ${num1} * ${num2}?`;
 
         function checkAnswer() {
             let answer = document.getElementById('answer').value;
             if (answer == num1 * num2) {
                 document.getElementById('result').innerText = 'Correct! Well done.';
             } else {
-                document.getElementById('result').innerText = Oops! The correct answer is ${num1 * num2}.;
+                document.getElementById('result').innerText = `Oops! The correct answer is ${num1 * num2}.`;
             }
         }
     </script>
